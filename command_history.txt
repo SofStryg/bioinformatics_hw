@@ -1,0 +1,109 @@
+  777  cd ~
+  778  cd projects
+  779  mkdir sofiabioinf
+  780  cd sofiabioinf
+  781  https://github.com/SofStryg/bioinformatics_hw.git
+  782  git clone https://github.com/SofStryg/bioinformatics_hw.git
+  783  ls
+  784  cd bioinformatics_hw
+  785  git status
+  787  git --help
+  789  git config user.name
+  790  git config user.name "SofStryg"
+  791  git config user.email "strygina.si@phystech.edu"
+  792  git config user.name
+  793  git config user.email
+  794  git config --global user.name
+  795  ls
+  796  echo "# Это hw по биоинформатике" > README.md
+  797  ls
+  798  cat README.md
+  799  echo "# Linux + Git + R" > README.md
+  800  ls
+  801  cat README.md
+  802  echo "# Это hw по биоинформатике" > README.md
+  803  echo "# Linux + Git + R" >> README.md
+  804  cat README.md
+  805  git add README.md
+  806  git commit -m "Init"
+  807  git push origin main
+  808  ssh-keygen -t ed25519 -C "strygina.si@phystech.edu"
+  809  ls
+  810  ..
+  811  ls -la
+  812  ls -lah
+  813  ll
+  814  ssh-keygen -t ed25519 -C "strygina.si@phystech.edu"
+  815  cat ~/.ssh/id_ed25519sof.pub
+  816  cd bioinformatics_hw
+  817  ls
+  818  git remote set-url origin git@github.com:SofStryg/bioinformatics_hw.git
+  819  sudo nano ~/.ssh/config
+  820  cat ~/.ssh/config
+  821  sudo nano ~/.ssh/config
+  822  cat ~/.ssh/config
+  823  git remote set-url origin git@github.com:SofStryg/bioinformatics_hw.git
+  824  git push origin main
+  825  cat ~/.ssh/config
+  826  ssh -T git@github.com
+  827  git remote -v
+  828  git remote set-url origin git@github-sofstryg:SofStryg/bioinformatics_hw.git
+  829  git push origin main
+  830  mkdir -p linux_task/data/raw/
+  831  ls
+  832  cd linux_task/data/raw
+  833  ls
+  834  touch sample1.tsv, sample2.tsv, sample3.tsv
+  835  ls
+  836  rm sample1.tsv, sample2.tsv, sample3.tsv
+  837  ls
+  838  rm sample1.tsv sample2.tsv sample3.tsv
+  839  touch sample1.tsv sample2.tsv sample3.tsv
+  840  ls
+  841  echo "GeneID\tExpression_Value" > sample1.tsv
+  842  ls
+  843  cat sample1.tsv
+  844  ...
+  845  ..
+  846  git status
+  847  git add linux_task/
+  848  git commit -m "Create raw data structure"
+  849  ls
+  850  git status
+  851  cd linux_task/data/raw
+  852  ls
+  853  cat > sequencing_summary.txt <<EOF\nrun_id: RUN001\ndate: 2026-02-18\nsample: sample1\nplatform: Illumina\nread_length: 150\ntotal_reads: 1024\nsample: sample2\ntotal_reads: 2048\nsample: sample3\ntotal_reads: 4096\n\nEOF
+  854  ls
+  855  cat sequencing_summary.txt
+  856  grep "sample" sequencing_summary.txt > samples_list.txt
+  857  ls
+  858  cat samples_list.txt
+  859  echo "Total samples found: $(wc -l < samples_list.txt)" >> samples_list.txt
+  860  tail 5 samples_list.txt
+  861  cat samples_list.txt
+  862  wc -l < samples_list.txt
+  870  echo "Total samples found: $(wc -l < samples_list.txt)" >> samples_list.txt
+  871  sudo nano samples_list.txt
+  872  ...
+  873  ..
+  874  ls
+  875  git status
+  876  git add linux_task/
+  877  git commit -m "Add sample list and count"
+  878  git checkout -b git-practice
+  879  echo "This is very important data." > important_note.txt
+  880  ls
+  881  cat important_note.txt
+  882  git add important_note.txt
+  883  git commit -m "Add important data"
+  884  ls
+  885  rm important_note.txt
+  886  ls
+  887  git status
+  888  git restore important_note.txt
+  889  echo "git restore important_note.txt" > git_command.txt
+  890  ls
+  891  cat git_command.txt
+  892  git add git_command.txt
+  893  git status
+  894  git commit -m "Restore deleted file"
